@@ -26,6 +26,7 @@
 		0C4B15C124FDE8B900D22B14 /* UrgencyNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C024FDE8B900D22B14 /* UrgencyNotification.m */; };
 		0C4B15C424FDE8C800D22B14 /* NormalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C324FDE8C800D22B14 /* NormalNotification.m */; };
 		0C4B15C724FDEB0300D22B14 /* TestNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C624FDEB0300D22B14 /* TestNotification.m */; };
+		0C4B15E324FE5D2C00D22B14 /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15E224FE5D2C00D22B14 /* InputStream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		0C4B15C324FDE8C800D22B14 /* NormalNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalNotification.m; sourceTree = "<group>"; };
 		0C4B15C524FDEB0300D22B14 /* TestNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNotification.h; sourceTree = "<group>"; };
 		0C4B15C624FDEB0300D22B14 /* TestNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNotification.m; sourceTree = "<group>"; };
+		0C4B15E124FE5D2C00D22B14 /* InputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputStream.h; sourceTree = "<group>"; };
+		0C4B15E224FE5D2C00D22B14 /* InputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputStream.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +122,9 @@
 		0C4B159724FCCA7700D22B14 /* 结构型 */ = {
 			isa = PBXGroup;
 			children = (
-				0C4B15AE24FDE3FA00D22B14 /* 桥接模式 */,
+				0C4B15E024FE5D1400D22B14 /* 装饰器模式 */,
 				0C4B15A324FCE18700D22B14 /* 代理模式 */,
+				0C4B15AE24FDE3FA00D22B14 /* 桥接模式 */,
 			);
 			path = "结构型";
 			sourceTree = "<group>";
@@ -204,6 +208,15 @@
 			path = "桥接模式";
 			sourceTree = "<group>";
 		};
+		0C4B15E024FE5D1400D22B14 /* 装饰器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B15E124FE5D2C00D22B14 /* InputStream.h */,
+				0C4B15E224FE5D2C00D22B14 /* InputStream.m */,
+			);
+			path = "装饰器模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +295,7 @@
 				0C4B158624FCCA6600D22B14 /* ViewController.m in Sources */,
 				0C4B15C124FDE8B900D22B14 /* UrgencyNotification.m in Sources */,
 				0C4B15B524FDE4EE00D22B14 /* EmailMsgSender.m in Sources */,
+				0C4B15E324FE5D2C00D22B14 /* InputStream.m in Sources */,
 				0C4B15B224FDE46900D22B14 /* TelephoneMsgSender.m in Sources */,
 				0C4B15AA24FCEF2100D22B14 /* UserController.m in Sources */,
 				0C4B15A724FCEDE500D22B14 /* UserVo.m in Sources */,
