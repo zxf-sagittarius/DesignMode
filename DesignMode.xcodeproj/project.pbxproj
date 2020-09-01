@@ -26,7 +26,10 @@
 		0C4B15C124FDE8B900D22B14 /* UrgencyNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C024FDE8B900D22B14 /* UrgencyNotification.m */; };
 		0C4B15C424FDE8C800D22B14 /* NormalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C324FDE8C800D22B14 /* NormalNotification.m */; };
 		0C4B15C724FDEB0300D22B14 /* TestNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15C624FDEB0300D22B14 /* TestNotification.m */; };
-		0C4B15E324FE5D2C00D22B14 /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15E224FE5D2C00D22B14 /* InputStream.m */; };
+		0C4B15E324FE5D2C00D22B14 /* ADecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15E224FE5D2C00D22B14 /* ADecorator.m */; };
+		0C4B15E724FE634F00D22B14 /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15E624FE634F00D22B14 /* Adaptee.m */; };
+		0C4B15EB24FE63CD00D22B14 /* Adaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15EA24FE63CD00D22B14 /* Adaptor.m */; };
+		0C4B15EE24FE642A00D22B14 /* Adaptor2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15ED24FE642A00D22B14 /* Adaptor2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +71,15 @@
 		0C4B15C324FDE8C800D22B14 /* NormalNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalNotification.m; sourceTree = "<group>"; };
 		0C4B15C524FDEB0300D22B14 /* TestNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNotification.h; sourceTree = "<group>"; };
 		0C4B15C624FDEB0300D22B14 /* TestNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNotification.m; sourceTree = "<group>"; };
-		0C4B15E124FE5D2C00D22B14 /* InputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputStream.h; sourceTree = "<group>"; };
-		0C4B15E224FE5D2C00D22B14 /* InputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputStream.m; sourceTree = "<group>"; };
+		0C4B15E124FE5D2C00D22B14 /* ADecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADecorator.h; sourceTree = "<group>"; };
+		0C4B15E224FE5D2C00D22B14 /* ADecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADecorator.m; sourceTree = "<group>"; };
+		0C4B15E524FE634F00D22B14 /* Adaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptee.h; sourceTree = "<group>"; };
+		0C4B15E624FE634F00D22B14 /* Adaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptee.m; sourceTree = "<group>"; };
+		0C4B15E824FE638400D22B14 /* ITarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITarget.h; sourceTree = "<group>"; };
+		0C4B15E924FE63CD00D22B14 /* Adaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptor.h; sourceTree = "<group>"; };
+		0C4B15EA24FE63CD00D22B14 /* Adaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptor.m; sourceTree = "<group>"; };
+		0C4B15EC24FE642A00D22B14 /* Adaptor2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptor2.h; sourceTree = "<group>"; };
+		0C4B15ED24FE642A00D22B14 /* Adaptor2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptor2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +132,10 @@
 		0C4B159724FCCA7700D22B14 /* 结构型 */ = {
 			isa = PBXGroup;
 			children = (
-				0C4B15E024FE5D1400D22B14 /* 装饰器模式 */,
+				0C4B15E424FE629F00D22B14 /* 适配器模式 */,
 				0C4B15A324FCE18700D22B14 /* 代理模式 */,
 				0C4B15AE24FDE3FA00D22B14 /* 桥接模式 */,
+				0C4B15E024FE5D1400D22B14 /* 装饰器模式 */,
 			);
 			path = "结构型";
 			sourceTree = "<group>";
@@ -211,10 +222,24 @@
 		0C4B15E024FE5D1400D22B14 /* 装饰器模式 */ = {
 			isa = PBXGroup;
 			children = (
-				0C4B15E124FE5D2C00D22B14 /* InputStream.h */,
-				0C4B15E224FE5D2C00D22B14 /* InputStream.m */,
+				0C4B15E124FE5D2C00D22B14 /* ADecorator.h */,
+				0C4B15E224FE5D2C00D22B14 /* ADecorator.m */,
 			);
 			path = "装饰器模式";
+			sourceTree = "<group>";
+		};
+		0C4B15E424FE629F00D22B14 /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B15E824FE638400D22B14 /* ITarget.h */,
+				0C4B15E524FE634F00D22B14 /* Adaptee.h */,
+				0C4B15E624FE634F00D22B14 /* Adaptee.m */,
+				0C4B15E924FE63CD00D22B14 /* Adaptor.h */,
+				0C4B15EA24FE63CD00D22B14 /* Adaptor.m */,
+				0C4B15EC24FE642A00D22B14 /* Adaptor2.h */,
+				0C4B15ED24FE642A00D22B14 /* Adaptor2.m */,
+			);
+			path = "适配器模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,18 +312,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4B15E724FE634F00D22B14 /* Adaptee.m in Sources */,
 				0C4B15BB24FDE53B00D22B14 /* Notification.m in Sources */,
 				0C4B15BE24FDE89E00D22B14 /* SevereNotification.m in Sources */,
+				0C4B15EB24FE63CD00D22B14 /* Adaptor.m in Sources */,
 				0C4B15C424FDE8C800D22B14 /* NormalNotification.m in Sources */,
 				0C4B15B824FDE50C00D22B14 /* WechatMsgSender.m in Sources */,
 				0C4B15C724FDEB0300D22B14 /* TestNotification.m in Sources */,
 				0C4B158624FCCA6600D22B14 /* ViewController.m in Sources */,
 				0C4B15C124FDE8B900D22B14 /* UrgencyNotification.m in Sources */,
 				0C4B15B524FDE4EE00D22B14 /* EmailMsgSender.m in Sources */,
-				0C4B15E324FE5D2C00D22B14 /* InputStream.m in Sources */,
+				0C4B15E324FE5D2C00D22B14 /* ADecorator.m in Sources */,
 				0C4B15B224FDE46900D22B14 /* TelephoneMsgSender.m in Sources */,
 				0C4B15AA24FCEF2100D22B14 /* UserController.m in Sources */,
 				0C4B15A724FCEDE500D22B14 /* UserVo.m in Sources */,
+				0C4B15EE24FE642A00D22B14 /* Adaptor2.m in Sources */,
 				0C4B158024FCCA6600D22B14 /* AppDelegate.m in Sources */,
 				0C4B159E24FCD34400D22B14 /* ResourcePoolConfig.m in Sources */,
 				0C4B15AD24FCEF3500D22B14 /* UserControllerProxy.m in Sources */,
