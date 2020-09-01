@@ -15,6 +15,9 @@
 		0C4B158E24FCCA6800D22B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4B158C24FCCA6800D22B14 /* LaunchScreen.storyboard */; };
 		0C4B159124FCCA6800D22B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B159024FCCA6800D22B14 /* main.m */; };
 		0C4B159E24FCD34400D22B14 /* ResourcePoolConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B159D24FCD34400D22B14 /* ResourcePoolConfig.m */; };
+		0C4B15A724FCEDE500D22B14 /* UserVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15A624FCEDE500D22B14 /* UserVo.m */; };
+		0C4B15AA24FCEF2100D22B14 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15A924FCEF2100D22B14 /* UserController.m */; };
+		0C4B15AD24FCEF3500D22B14 /* UserControllerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15AC24FCEF3500D22B14 /* UserControllerProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		0C4B159024FCCA6800D22B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C4B159C24FCD34400D22B14 /* ResourcePoolConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourcePoolConfig.h; sourceTree = "<group>"; };
 		0C4B159D24FCD34400D22B14 /* ResourcePoolConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourcePoolConfig.m; sourceTree = "<group>"; };
+		0C4B15A424FCEDB700D22B14 /* IUserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUserController.h; sourceTree = "<group>"; };
+		0C4B15A524FCEDE500D22B14 /* UserVo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserVo.h; sourceTree = "<group>"; };
+		0C4B15A624FCEDE500D22B14 /* UserVo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserVo.m; sourceTree = "<group>"; };
+		0C4B15A824FCEF2100D22B14 /* UserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserController.h; sourceTree = "<group>"; };
+		0C4B15A924FCEF2100D22B14 /* UserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
+		0C4B15AB24FCEF3500D22B14 /* UserControllerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserControllerProxy.h; sourceTree = "<group>"; };
+		0C4B15AC24FCEF3500D22B14 /* UserControllerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserControllerProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4B159824FCCA8400D22B14 /* 创建型 */,
-				0C4B159724FCCA7700D22B14 /* builder */,
+				0C4B159724FCCA7700D22B14 /* 结构型 */,
 				0C4B157E24FCCA6600D22B14 /* AppDelegate.h */,
 				0C4B157F24FCCA6600D22B14 /* AppDelegate.m */,
 				0C4B158124FCCA6600D22B14 /* SceneDelegate.h */,
@@ -81,28 +91,30 @@
 			path = DesignMode;
 			sourceTree = "<group>";
 		};
-		0C4B159724FCCA7700D22B14 /* builder */ = {
+		0C4B159724FCCA7700D22B14 /* 结构型 */ = {
 			isa = PBXGroup;
 			children = (
+				0C4B15A324FCE18700D22B14 /* 代理模式 */,
 			);
-			path = builder;
+			path = "结构型";
 			sourceTree = "<group>";
 		};
 		0C4B159824FCCA8400D22B14 /* 创建型 */ = {
 			isa = PBXGroup;
 			children = (
+				0C4B15A224FCDF1D00D22B14 /* 原型模式 */,
 				0C4B159B24FCCAB100D22B14 /* 建造者模式 */,
 				0C4B159A24FCCAA900D22B14 /* 工厂模式 */,
-				0C4B159924FCCA8F00D22B14 /* 代理模式 */,
+				0C4B159924FCCA8F00D22B14 /* 单例模式 */,
 			);
 			path = "创建型";
 			sourceTree = "<group>";
 		};
-		0C4B159924FCCA8F00D22B14 /* 代理模式 */ = {
+		0C4B159924FCCA8F00D22B14 /* 单例模式 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "代理模式";
+			path = "单例模式";
 			sourceTree = "<group>";
 		};
 		0C4B159A24FCCAA900D22B14 /* 工厂模式 */ = {
@@ -119,6 +131,27 @@
 				0C4B159D24FCD34400D22B14 /* ResourcePoolConfig.m */,
 			);
 			path = "建造者模式";
+			sourceTree = "<group>";
+		};
+		0C4B15A224FCDF1D00D22B14 /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		0C4B15A324FCE18700D22B14 /* 代理模式 */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B15A424FCEDB700D22B14 /* IUserController.h */,
+				0C4B15A524FCEDE500D22B14 /* UserVo.h */,
+				0C4B15A624FCEDE500D22B14 /* UserVo.m */,
+				0C4B15A824FCEF2100D22B14 /* UserController.h */,
+				0C4B15A924FCEF2100D22B14 /* UserController.m */,
+				0C4B15AB24FCEF3500D22B14 /* UserControllerProxy.h */,
+				0C4B15AC24FCEF3500D22B14 /* UserControllerProxy.m */,
+			);
+			path = "代理模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4B158624FCCA6600D22B14 /* ViewController.m in Sources */,
+				0C4B15AA24FCEF2100D22B14 /* UserController.m in Sources */,
+				0C4B15A724FCEDE500D22B14 /* UserVo.m in Sources */,
 				0C4B158024FCCA6600D22B14 /* AppDelegate.m in Sources */,
 				0C4B159E24FCD34400D22B14 /* ResourcePoolConfig.m in Sources */,
+				0C4B15AD24FCEF3500D22B14 /* UserControllerProxy.m in Sources */,
 				0C4B159124FCCA6800D22B14 /* main.m in Sources */,
 				0C4B158324FCCA6600D22B14 /* SceneDelegate.m in Sources */,
 			);

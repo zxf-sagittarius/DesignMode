@@ -30,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) Builder *(^setMinIdle)(NSInteger minIdle);
 @property (nonatomic, copy) Builder *(^build)(void);
 
-
 @end
 
 NS_ASSUME_NONNULL_END
