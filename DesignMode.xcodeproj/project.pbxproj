@@ -30,6 +30,9 @@
 		0C4B15E724FE634F00D22B14 /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15E624FE634F00D22B14 /* Adaptee.m */; };
 		0C4B15EB24FE63CD00D22B14 /* Adaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15EA24FE63CD00D22B14 /* Adaptor.m */; };
 		0C4B15EE24FE642A00D22B14 /* Adaptor2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15ED24FE642A00D22B14 /* Adaptor2.m */; };
+		0C4B15F324FF433400D22B14 /* HumanResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15F224FF433400D22B14 /* HumanResource.m */; };
+		0C4B15F624FF4A0200D22B14 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15F524FF4A0200D22B14 /* Employee.m */; };
+		0C4B15F924FF4A7A00D22B14 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B15F824FF4A7A00D22B14 /* Department.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,12 @@
 		0C4B15EA24FE63CD00D22B14 /* Adaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptor.m; sourceTree = "<group>"; };
 		0C4B15EC24FE642A00D22B14 /* Adaptor2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptor2.h; sourceTree = "<group>"; };
 		0C4B15ED24FE642A00D22B14 /* Adaptor2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptor2.m; sourceTree = "<group>"; };
+		0C4B15F124FF433400D22B14 /* HumanResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanResource.h; sourceTree = "<group>"; };
+		0C4B15F224FF433400D22B14 /* HumanResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanResource.m; sourceTree = "<group>"; };
+		0C4B15F424FF4A0200D22B14 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		0C4B15F524FF4A0200D22B14 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		0C4B15F724FF4A7A00D22B14 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		0C4B15F824FF4A7A00D22B14 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +141,8 @@
 		0C4B159724FCCA7700D22B14 /* 结构型 */ = {
 			isa = PBXGroup;
 			children = (
+				0C4B15F024FF432100D22B14 /* 组合模式 */,
+				0C4B15EF24FE6AC500D22B14 /* 门面模式 */,
 				0C4B15E424FE629F00D22B14 /* 适配器模式 */,
 				0C4B15A324FCE18700D22B14 /* 代理模式 */,
 				0C4B15AE24FDE3FA00D22B14 /* 桥接模式 */,
@@ -242,6 +253,26 @@
 			path = "适配器模式";
 			sourceTree = "<group>";
 		};
+		0C4B15EF24FE6AC500D22B14 /* 门面模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "门面模式";
+			sourceTree = "<group>";
+		};
+		0C4B15F024FF432100D22B14 /* 组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B15F124FF433400D22B14 /* HumanResource.h */,
+				0C4B15F224FF433400D22B14 /* HumanResource.m */,
+				0C4B15F424FF4A0200D22B14 /* Employee.h */,
+				0C4B15F524FF4A0200D22B14 /* Employee.m */,
+				0C4B15F724FF4A7A00D22B14 /* Department.h */,
+				0C4B15F824FF4A7A00D22B14 /* Department.m */,
+			);
+			path = "组合模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,13 +354,16 @@
 				0C4B15C124FDE8B900D22B14 /* UrgencyNotification.m in Sources */,
 				0C4B15B524FDE4EE00D22B14 /* EmailMsgSender.m in Sources */,
 				0C4B15E324FE5D2C00D22B14 /* ADecorator.m in Sources */,
+				0C4B15F324FF433400D22B14 /* HumanResource.m in Sources */,
 				0C4B15B224FDE46900D22B14 /* TelephoneMsgSender.m in Sources */,
 				0C4B15AA24FCEF2100D22B14 /* UserController.m in Sources */,
 				0C4B15A724FCEDE500D22B14 /* UserVo.m in Sources */,
 				0C4B15EE24FE642A00D22B14 /* Adaptor2.m in Sources */,
+				0C4B15F924FF4A7A00D22B14 /* Department.m in Sources */,
 				0C4B158024FCCA6600D22B14 /* AppDelegate.m in Sources */,
 				0C4B159E24FCD34400D22B14 /* ResourcePoolConfig.m in Sources */,
 				0C4B15AD24FCEF3500D22B14 /* UserControllerProxy.m in Sources */,
+				0C4B15F624FF4A0200D22B14 /* Employee.m in Sources */,
 				0C4B159124FCCA6800D22B14 /* main.m in Sources */,
 				0C4B158324FCCA6600D22B14 /* SceneDelegate.m in Sources */,
 			);

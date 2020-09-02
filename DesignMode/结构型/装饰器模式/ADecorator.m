@@ -6,7 +6,7 @@
 //  Copyright © 2020 zxfei. All rights reserved.
 //
 
-#import "InputStream.h"
+#import "ADecorator.h"
 
 @implementation A
 
